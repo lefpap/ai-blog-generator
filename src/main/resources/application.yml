@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: ai-blog-generator
+
+provider:
+  news-api:
+    base-url: https://newsapi.org/v2
+    api-key: ${NEWS_API_KEY}
+    options:
+      topic: technology
+      range: P1W
+      limit: 100
+      sortBy: relevancy
+
+
